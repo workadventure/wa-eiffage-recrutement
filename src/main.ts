@@ -4,7 +4,8 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
-let popupHopital: Popup|null;
+let popupHopital: null;
+let popupBuilding: null;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
