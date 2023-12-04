@@ -48,10 +48,10 @@ WA.onInit().then(() => {
         }]);
     });
 
-    WA.room.area.onEnter("zoneBuilding").subscribe(() => {
+    WA.room.area.onLeave("zoneBuilding").subscribe(() => {
         popupBuilding?.close();
     });
-    WA.room.area.onEnter("zonePopupHopital").subscribe(() => {
+    WA.room.area.onLeave("zonePopupHopital").subscribe(() => {
         popupBuilding?.close();
     });
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
