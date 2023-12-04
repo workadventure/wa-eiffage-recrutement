@@ -1903,7 +1903,7 @@
                         {
                          "name":"url",
                          "type":"string",
-                         "value":"{{{websiteUrl}}}"
+                         "value":"{{{ websiteUrl }}}"
                         }],
                  "rotation":0,
                  "type":"website",

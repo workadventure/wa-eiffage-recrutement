@@ -12,12 +12,12 @@ let link: any;
 WA.onInit().then(() => {
     console.log('Scripting API ready');
 
-    WA.room.area.onEnter("roofZone").subscribe(() => {
+    WA.room.onEnterLayer("roofZone").subscribe(() => {
         WA.room.hideLayer("Roof/roof1");
         WA.room.hideLayer("Roof/roof2");
     });
 
-    WA.room.area.onLeave("roofZone").subscribe(() => {
+    WA.room.onLeaveLayer("roofZone").subscribe(() => {
         WA.room.showLayer("Roof/roof1");
         WA.room.showLayer("Roof/roof2");
     });
