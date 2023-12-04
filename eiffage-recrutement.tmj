@@ -2469,6 +2469,11 @@
                          "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
                         }, 
                         {
+                         "name":"label",
+                         "type":"string",
+                         "value":"Texte popup hopital"
+                        }, 
+                        {
                          "name":"persist",
                          "type":"bool",
                          "value":true
@@ -2492,6 +2497,11 @@
                          "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
                         }, 
                         {
+                         "name":"label",
+                         "type":"string",
+                         "value":"Texte popup entr\u00e9e"
+                        }, 
+                        {
                          "name":"persist",
                          "type":"bool",
                          "value":true
@@ -2513,6 +2523,16 @@
                          "name":"default",
                          "type":"string",
                          "value":"https:\/\/www.youtube.com\/embed\/LUID0jSh2Ic"
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"URL panneau vid\u00e9o accueil"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
                         }],
                  "rotation":0,
                  "type":"variable",
@@ -2531,6 +2551,16 @@
                          "name":"default",
                          "type":"string",
                          "value":"https:\/\/www.youtube.com\/embed\/LUID0jSh2Ic"
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"URL vid\u00e9o entr\u00e9e batiment"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
                         }],
                  "rotation":0,
                  "type":"variable",
