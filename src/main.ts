@@ -23,8 +23,8 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter("zonePopupHopital").subscribe(() => {
         if(popupHopital) return;
-        popupHopital = WA.ui.openPopup("popupHopital", "Our private office serves as a restricted zone, exclusively accessible to our team members.", [{
-            label: "Voir la vidéo",
+        popupHopital = WA.ui.openPopup("popupHopital", WA.state.txt_popup_hopital as string, [{
+            label: "Fermer",
             className: "primary",
             callback: () => {
                 popupHopital?.close();
@@ -35,16 +35,24 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter("zoneBuilding").subscribe(() => {
         if(popupBuilding) return;
-        popupBuilding = WA.ui.openPopup("popupBuilding", "Our private office serves as a restricted zone, exclusively accessible to our team members.", [{
+        popupBuilding = WA.ui.openPopup("popupBuilding", WA.state.txt_popup_building as string, [{
             label: "Voir la vidéo",
             className: "primary",
             callback: () => {
+                link = WA.state.lnk_building;
+                WA.nav.openCoWebSite(link);
                 popupBuilding?.close();
                 popupBuilding = null;
             }
         }]);
     });
 
+    WA.room.area.onEnter("zoneBuilding").subscribe(() => {
+        popupBuilding?.close();
+    });
+    WA.room.area.onEnter("zonePopupHopital").subscribe(() => {
+        popupBuilding?.close();
+    });
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
         console.log('Scripting API Extra ready');
