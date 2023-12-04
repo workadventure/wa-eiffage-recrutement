@@ -6,6 +6,7 @@ console.log('Script started successfully');
 
 let popupHopital: any;
 let popupBuilding: any;
+let link: any;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
