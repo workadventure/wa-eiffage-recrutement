@@ -3611,7 +3611,7 @@
         {
          "columns":64,
          "firstgid":4382,
-         "image":"..\/wa-danone-flat\/tilesets\/Danone.png",
+         "image":"tilesets\/Danone.png",
          "imageheight":2048,
          "imagewidth":2048,
          "margin":0,
