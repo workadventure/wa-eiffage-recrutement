@@ -51,7 +51,7 @@ WA.onInit().then(() => {
     WA.ui.modal.openModal({
         src: "https://hugoaverty.github.io/eiffage-UI/src/",
         allow: "fullscreen",
-        title: "Bievenue",
+        title: "Bienvenue",
         allowApi: true,
         position: "center",
     });
