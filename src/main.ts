@@ -49,7 +49,6 @@ WA.onInit().then(() => {
     });
 
     WA.room.area.onEnter("zoneIntro").subscribe(() => {
-        console.log("CHIBRE");
         WA.ui.modal.openModal({
             src: "https://hugoaverty.github.io/eiffage-UI/src/",
             allow: "fullscreen",
