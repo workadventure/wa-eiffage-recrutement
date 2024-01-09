@@ -48,6 +48,17 @@ WA.onInit().then(() => {
         }]);
     });
 
+    WA.room.area.onEnter("zoneIntro").subscribe(() => {
+        console.log("CHIBRE");
+        WA.ui.modal.openModal({
+            src: "https://hugoaverty.github.io/eiffage-UI/src/",
+            allow: "fullscreen",
+            title: "Bievenue",
+            allowApi: true,
+            position: "center",
+        });
+    });
+
     WA.room.area.onLeave("zoneBuilding").subscribe(() => {
         popupBuilding?.close();
         popupBuilding = null;
