@@ -48,14 +48,15 @@ WA.onInit().then(() => {
         }]);
     });
 
-    WA.room.area.onEnter("zoneIntro").subscribe(() => {
-        WA.ui.modal.openModal({
-            src: "https://hugoaverty.github.io/eiffage-UI/src/",
-            allow: "fullscreen",
-            title: "Bievenue",
-            allowApi: true,
-            position: "center",
-        });
+    WA.ui.modal.openModal({
+        src: "https://hugoaverty.github.io/eiffage-UI/src/",
+        allow: "fullscreen",
+        title: "Bievenue",
+        allowApi: true,
+        position: "center",
+    });
+    WA.room.area.onLeave("zoneIntro").subscribe(() => {
+        WA.ui.modal.closeModal();
     });
 
     WA.room.area.onLeave("zoneBuilding").subscribe(() => {
