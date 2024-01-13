@@ -48,13 +48,27 @@ WA.onInit().then(() => {
         }]);
     });
 
-    WA.ui.modal.openModal({
-        src: "https://hugoaverty.github.io/eiffage-UI/src/",
-        allow: "fullscreen",
-        title: "Bienvenue",
-        allowApi: true,
-        position: "center",
+    WA.ui.actionBar.addButton({
+        id: 'help-btn',
+        // @ts-ignore
+        type: 'action',
+        imageSrc: 'https://svgur.com/i/10Sh.svg',
+        toolTip: 'Aide',
+        callback: () => {
+            WA.nav.openCoWebSite("https://hugoaverty.github.io/eiffage-UI/src/help.pdf");
+        }
     });
+
+    WA.ui.modal.closeModal();
+    setTimeout(() => {
+        WA.ui.modal.openModal({
+            src: "https://hugoaverty.github.io/eiffage-UI/src/",
+            allow: "fullscreen",
+            title: "Bienvenue",
+            allowApi: true,
+            position: "center",
+        });
+    }, 1000);
     WA.room.area.onLeave("zoneIntro").subscribe(() => {
         WA.ui.modal.closeModal();
     });
