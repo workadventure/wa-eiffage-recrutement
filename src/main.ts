@@ -58,9 +58,10 @@ WA.onInit().then(() => {
             WA.nav.openCoWebSite("https://hugoaverty.github.io/eiffage-UI/src/help.pdf");
         }
     });
-
+    WA.player.state.tutorialDone = true;
     WA.ui.modal.closeModal();
     setTimeout(() => {
+        WA.ui.modal.closeModal();
         WA.ui.modal.openModal({
             src: "https://hugoaverty.github.io/eiffage-UI/src/",
             allow: "fullscreen",
