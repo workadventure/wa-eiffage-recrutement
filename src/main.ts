@@ -22,7 +22,7 @@ WA.onInit().then(() => {
         WA.room.showLayer("Roof/roof2");
     });
 
-    if (window.location.href.indexOf("Entry") != -1) {
+    if ('Entry' in WA.room.hashParameters) {
         WA.room.hideLayer("Roof/roof1");
         WA.room.hideLayer("Roof/roof2");
     }
