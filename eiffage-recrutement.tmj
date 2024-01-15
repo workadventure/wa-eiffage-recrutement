@@ -2041,11 +2041,6 @@
                          "name":"persist",
                          "type":"bool",
                          "value":true
-                        }, 
-                        {
-                         "name":"tag",
-                         "type":"string",
-                         "value":"admin"
                         }],
                  "rotation":0,
                  "type":"variable",
@@ -2303,6 +2298,11 @@
                          "value":"doorMain"
                         }, 
                         {
+                         "name":"tag",
+                         "type":"string",
+                         "value":"admin"
+                        }, 
+                        {
                          "name":"zone",
                          "type":"string",
                          "value":"zone_doorMain"
@@ -2538,23 +2538,6 @@
                  "width":1018.66666666667,
                  "x":334.666666666667,
                  "y":1562.66666666667
-                }, 
-                {
-                 "height":46,
-                 "id":222,
-                 "name":"EntryPoint",
-                 "properties":[
-                        {
-                         "name":"startLayer",
-                         "type":"bool",
-                         "value":true
-                        }],
-                 "rotation":0,
-                 "type":"area",
-                 "visible":true,
-                 "width":50,
-                 "x":1820,
-                 "y":1515
                 }],
          "opacity":1,
          "type":"objectgroup",
