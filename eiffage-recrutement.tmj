@@ -2538,6 +2538,23 @@
                  "width":1018.66666666667,
                  "x":334.666666666667,
                  "y":1562.66666666667
+                }, 
+                {
+                 "height":46,
+                 "id":222,
+                 "name":"EntryPoint",
+                 "properties":[
+                        {
+                         "name":"startLayer",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":50,
+                 "x":1820,
+                 "y":1515
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3186,7 +3203,7 @@
          "y":0
         }],
  "nextlayerid":133,
- "nextobjectid":222,
+ "nextobjectid":223,
  "orientation":"orthogonal",
  "properties":[
         {
