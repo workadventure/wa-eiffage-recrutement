@@ -22,6 +22,11 @@ WA.onInit().then(() => {
         WA.room.showLayer("Roof/roof2");
     });
 
+    if (window.location.href.indexOf("Entry") != -1) {
+        WA.room.hideLayer("Roof/roof1");
+        WA.room.hideLayer("Roof/roof2");
+    }
+
     WA.room.area.onEnter("zonePopupHopital").subscribe(() => {
         if(popupHopital) return;
         popupHopital = WA.ui.openPopup("popupHopital", WA.state.txt_popup_hopital as string, [{
