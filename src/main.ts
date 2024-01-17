@@ -42,11 +42,11 @@ WA.onInit().then(() => {
     WA.room.area.onEnter("zoneBuilding").subscribe(() => {
         if(popupBuilding) return;
         popupBuilding = WA.ui.openPopup("popupBuilding", WA.state.txt_popup_building as string, [{
-            label: "Voir la vidéo",
+            label: "Fermer",
             className: "primary",
             callback: () => {
-                link = WA.state.lnk_building;
-                WA.nav.openCoWebSite(link);
+//                link = WA.state.lnk_building;
+//                WA.nav.openCoWebSite(link);
                 popupBuilding?.close();
                 popupBuilding = null;
             }
