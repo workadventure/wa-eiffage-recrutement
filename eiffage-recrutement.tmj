@@ -1961,6 +1961,11 @@
                          "value":"doors\/opened_doorMain"
                         }, 
                         {
+                         "name":"openTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyer sur Espace pour ouvrir la porte"
+                        }, 
+                        {
                          "name":"persist",
                          "type":"bool",
                          "value":true
@@ -1997,6 +2002,11 @@
                          "name":"openLayer",
                          "type":"string",
                          "value":"doors\/opened_doorElec"
+                        }, 
+                        {
+                         "name":"openTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyer sur Espace pour ouvrir la porte"
                         }, 
                         {
                          "name":"persist",
@@ -2037,6 +2047,11 @@
                          "value":"doors\/opened_doorClim"
                         }, 
                         {
+                         "name":"openTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyer sur Espace pour ouvrir la porte"
+                        }, 
+                        {
                          "name":"persist",
                          "type":"bool",
                          "value":true
@@ -2073,6 +2088,11 @@
                          "name":"openLayer",
                          "type":"string",
                          "value":"doors\/opened_doorMaintenance"
+                        }, 
+                        {
+                         "name":"openTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyer sur Espace pour ouvrir la porte"
                         }, 
                         {
                          "name":"persist",
@@ -2113,6 +2133,11 @@
                          "value":"doors\/opened_doorEtudes"
                         }, 
                         {
+                         "name":"openTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyer sur Espace pour ouvrir la porte"
+                        }, 
+                        {
                          "name":"persist",
                          "type":"bool",
                          "value":true
@@ -2151,6 +2176,11 @@
                          "value":"doors\/opened_doorTvx"
                         }, 
                         {
+                         "name":"openTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyer sur Espace pour ouvrir la porte"
+                        }, 
+                        {
                          "name":"persist",
                          "type":"bool",
                          "value":true
@@ -2187,6 +2217,11 @@
                          "name":"openLayer",
                          "type":"string",
                          "value":"doors\/opened_doorMaintenanceEtEssais"
+                        }, 
+                        {
+                         "name":"openTriggerMessage",
+                         "type":"string",
+                         "value":"Appuyer sur Espace pour ouvrir la porte"
                         }, 
                         {
                          "name":"persist",
